@@ -1,0 +1,19 @@
+##Docker compose file for FURNISHAI-APP and Jenkings 
+
+version: "1"
+
+services:
+
+  bold_wescoff:
+    image: furnishai-app
+    ports:
+      - 8000:8000
+  
+  jekings:
+    image: miltoncardoso/jenkings
+    ports:
+      - 8081:8080
+
+
+    
+
