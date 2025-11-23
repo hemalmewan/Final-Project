@@ -9,7 +9,7 @@ import os
 from pathlib import Path
 
 # Add a comment or change something small
-# Version 1.0 - Testing CI/CD pipeline
+# Version 2.0 - Testing CI/CD pipeline
 
 
 # Load trained pipeline model
