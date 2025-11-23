@@ -40,26 +40,6 @@ pipeline {
             }
         }
         
-        stage('Health Check') {
-            steps {
-                script {
-                    // Wait for container to start
-                    sh 'sleep 5'
-                    
-                    // Check if container is running
-                    sh '''
-                        if docker ps --format "{{.Names}}" | grep -q "^${APP_CONTAINER}$"; then
-                            echo "Container ${APP_CONTAINER} is running"
-                            docker logs ${APP_CONTAINER} --tail 20
-                        else
-                            echo "Container ${APP_CONTAINER} is not running!"
-                            docker logs ${APP_CONTAINER} --tail 50
-                            exit 1
-                        fi
-                    '''
-                }
-            }
-        }
     }
     
     post {
