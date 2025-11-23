@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_NETWORK = 'final-project_final-project'
+        DOCKER_NETWORK = ' final-project_final-project_final-project '
         APP_CONTAINER = 'final-project-ml-app'
     }
     
