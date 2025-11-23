@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         DOCKER_NETWORK = 'final-project_final-project '
-        APP_CONTAINER = 'ml-app'
+        APP_CONTAINER = 'final-project-ml-app'
     }
     
     stages {
