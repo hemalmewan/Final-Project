@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_NETWORK = 'final-project_final-project_final-project'
+        DOCKER_NETWORK = 'final-project'
         APP_CONTAINER = 'final-project-ml-app'
     }
     
@@ -35,7 +35,7 @@ pipeline {
                         --name ${APP_CONTAINER} \
                         --network ${DOCKER_NETWORK} \
                         -p 8000:8000 \
-                        furnishai-app:latest
+                        ml-product-app:latest
                     '''
                 }
             }

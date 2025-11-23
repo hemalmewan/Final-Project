@@ -8,7 +8,7 @@ services:
     ports:
       - "8000:8000"
     networks:
-      - final-project_final-project
+      - final-project
   
   jenkins-server:
     image: jenkins/jenkins:lts
@@ -20,11 +20,11 @@ services:
       - jenkins_home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
-      - final-project_final-project
+      - final-project
     user: root
 
 networks:
-  final-project_final-project:
+  final-project:
     driver: bridge
 
 volumes:
