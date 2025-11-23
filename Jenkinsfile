@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_NETWORK = 'final-project_final-project'
         APP_CONTAINER = 'final-project-ml-app'
-        DOCKERHUB_REPO = 'hemalmewan/furnishai-app'  // Change this to your Docker Hub repo
+        DOCKERHUB_REPO = 'hemalmewan/ml-app'  // Change this to your Docker Hub repo
         DOCKERHUB_CREDENTIALS = 'dockerhub-credentials'
         IMAGE_TAG = "${env.BUILD_NUMBER}"  // Use Jenkins build number as version
         GIT_COMMIT_SHORT = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
