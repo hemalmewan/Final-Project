@@ -8,6 +8,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 from pathlib import Path
 
+# Add a comment or change something small
+# Version 1.0 - Testing CI/CD pipeline
+
+
 # Load trained pipeline model
 BASE_DIR = Path(__file__).parent  # /ml-app/BackEnd -
 FRONTEND_DIR = BASE_DIR.parent / "FrontEnd"  # /ml-app/FrontEnd
