@@ -35,7 +35,7 @@ pipeline {
                         --name ${APP_CONTAINER} \
                         --network ${DOCKER_NETWORK} \
                         -p 8000:8000 \
-                        ml-app
+                        furnishai-app:latest
                     '''
                 }
             }
