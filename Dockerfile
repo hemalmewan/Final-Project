@@ -12,7 +12,6 @@ RUN pip install --no-cache-dir -r BackEnd/requirements.txt
 
 ##Copy frontend best mode and backend to the conteiner
 COPY BackEnd ./BackEnd/
-COPY FrontEnd ./FrontEnd/
 COPY best_model ./best_model/
 
 
