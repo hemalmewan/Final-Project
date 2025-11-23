@@ -4,12 +4,12 @@ version: "1"
 
 services:
 
-  bold_wescoff:
-    image: furnishai-app
+  ml-app:
+    image: furnishai-app:latest
     ports:
       - 8000:8000
   
-  jekings:
+  jenkins-server:
     image: miltoncardoso/jenkings
     ports:
       - 8081:8080
